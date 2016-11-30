@@ -1,0 +1,207 @@
+@media only screen and (min-width: 641px) {
+    /*========COLUMNS========*/
+
+    #contentWrapper .row:after,
+    .contentWrapper .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .col-11,
+    .col-6,
+    .col-5,
+    .col-4,
+    .col-3,
+    .col-2,
+    .col-1 {
+        float: left;
+    }
+    .col-11 {
+        width: calc(91.6666% - 20px);
+    }
+    .col-6 {
+        width: calc(50% - 20px);
+    }
+    .col-5 {
+        width: calc(41.6666% - 20px);
+    }
+    .col-4 {
+        width: calc(25% - 20px);
+    }
+    .col-3 {
+        width: calc(33.3333% - 20px);
+    }
+    .col-2 {
+        width: calc(16.6666% - 20px)
+    }
+    .col-1 {
+        width: calc(8.3333% - 20px)
+    }
+    /*---------- NAVIGATION -----------*/
+
+    #ham_icon {
+        display: none;
+    }
+    #phoneNav {
+        position: absolute;
+        left: -9999px;
+    }
+    #nav_menu {
+        position: static;
+        padding: 40px 0 8px 8px;
+        color: #f2f2f2;
+        float: left;
+    }
+    #nav_menu ul li {
+        text-align: left;
+        display: inline;
+        padding: 0 7.5px;
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .active {
+        text-decoration: underline;
+    }
+    /*========HOME PAGE========*/
+    /*HERO*/
+
+    .cover,
+    .about-cover {
+        margin: 0 auto;
+        height: 320px;
+    }
+    .cover {
+        background-image: url(../img/home/cover_lrg.jpg);
+        background-position: top center;
+    }
+    .cover h1 {
+        padding-top: 125px;
+        font-size: 1.8em;
+    }
+    .cover h1,
+    .cover h2 {
+        text-shadow: 2px 3px 1px #000;
+    }
+    .cover h2 {
+        padding-top: 25px;
+        font-size: 3.575em;
+    }
+    .main-content {
+        background-image: url(../img/home/about_home.jpg);
+        background-position: bottom right;
+    }
+    .main-content-text {
+        text-align: left;
+    }
+    /*========ABOUT========*/
+
+    .about-cover {
+        background-image: url(../img/about/about_cover_lrg.jpg);
+    }
+    .about-main-content-text {
+        text-align: left;
+    }
+    .abt-act-text {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /*========CONTACT========*/
+
+    .contact_cover_heading h1 {
+        font-size: 3.375em;
+        text-align: left;
+        padding-top: 90px;
+        padding-left: 15px;
+    }
+    .contact_cover_heading {
+        background-image: url(../img/contact/contact_cover_lrg.jpg);
+    }
+    .contact_text {
+        margin-left: 10px;
+    }
+    /*========PROJECTS/YOUTUBE========*/
+
+    .proj_overview img {
+        position: static;
+        max-width: 47.5%;
+    }
+    .proj_disc {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .yt_feat h2,
+    .yt_feat p,
+    iframe {
+        margin-left: 3%;
+    }
+    .yt_feat p {
+        padding: 0 0 10px;
+    }
+}
+/*end of the media query */
+/*Minor breaks*/
+
+@media only screen and (min-width: 995px) {
+    /*Feature*/
+
+    .features {
+        overflow: hidden;
+    }
+    .feat_disc {
+        position: static;
+        width: calc(25% - 16px);
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .feat_disc h2 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    .feat_disc p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .features img {
+        width: calc(25% - 12px);
+        float: left;
+    }
+    .title {
+        text-align: left;
+        background: #000;
+    }
+    .main-content {
+        background-image: url(../img/home/about_home.jpg);
+        height: 400px;
+    }
+    .main-content-text {
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    /*CONTACT TEXT MARGIN*/
+
+    .contact_text {
+        margin-left: -50px;
+    }
+    /*PROJECTS COVER*/
+
+    .proj_cover {
+        background-image: url(../img/proj/cover_lrg.jpg)
+    }
+    .proj_overview p {
+        padding-left: 25px;
+    }
+    /*YOUTUBE*/
+
+    .youtube_cover {
+        background-image: url(../img/videos/cover_art_lrg.jpg);
+    }
+    .yt_feat h2,
+    .yt_feat p,
+    iframe {
+        margin-left: 3.5%;
+    }
+}

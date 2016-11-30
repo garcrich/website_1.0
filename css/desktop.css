@@ -1,0 +1,90 @@
+@media only screen and (min-width: 1140px) {
+    /*---------- SCREEN LIMIT -----------*/
+
+    header,
+    nav,
+    .row,
+    footer,
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        /*Center Content*/
+    }
+    /*========NAVIGATION========*/
+
+    #nav_menu ul li {
+        transition-property: letter-spacing;
+        transition-duration: .15s;
+        transition-timing-function: ease-out;
+        font-size: 1.7em;
+        letter-spacing: 2px;
+        padding-right: 20px;
+    }
+    #nav_menu ul li:hover {
+        transition-property: letter-spacing, color;
+        transition-duration: .15s;
+        transition-timing-function: ease-out;
+        letter-spacing: 4.5px;
+        color: rgba(255, 255, 255, 0.70);
+    }
+    /*========HOME PAGE========*/
+    /*HERO*/
+
+    .cover h1,
+    .cover h2 {
+        text-shadow: 2px 3px 1px #000;
+    }
+    .cover h1 {
+        font-size: 2.2em;
+    }
+    .cover h2 {
+        padding-top: 25px;
+        font-size: 3.975em;
+    }
+    /*features*/
+
+    .features img {
+        -webkit-transition: background-color 0.25s;
+        /* Safari */
+
+        transition: background-color 0.25s;
+        transition-timing-function: ease-out;
+    }
+    .features img:hover {
+        background-color: #f2f2f2;
+        -webkit-transition: background-color 0.25s;
+        /* Safari */
+
+        transition: background-color 0.25s;
+        transition-timing-function: ease-out;
+    }
+    .main-content {
+        background-position: left
+    }
+    .main-content-text {
+        max-width: 850px;
+    }
+    /*========ABOUT========*/
+    /*========CONTACT========*/
+
+    .contact_cover_heading h1 {
+        font-size: 3.375em;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .contact_text {
+        margin-left: -80px;
+    }
+    /*========PROJECTS========*/
+
+    .proj_overview p {
+        padding-left: 50px;
+    }
+    .yt_feat p {
+        padding: 0 0 10px;
+    }
+    .proj_div a:hover {
+        text-decoration: underline;
+    }
+}
+/*end of the media query */

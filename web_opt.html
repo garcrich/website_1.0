@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="All things web development by Ricky Garcia">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, Web Development, Web Design, Responsive Design">
+    <meta name="author" content="Ricky Garcia">
+    <title>Built By Ricky</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Crimson+Text' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/minified.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+        <div id="logo">
+            <img src="img/head_foot/logo.png" alt="circle with an R and a G centered inside.">
+        </div>
+            <div id="ham_icon">
+                <div id="showPhoneNav">
+                    <img src="img/head_foot/ham_icon.png" alt="hamburger icon">
+                </div>
+        </div>
+
+            <div id="nav_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="videos.html">YouTube</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </div>
+        </nav>  <!-- END NAV -->
+
+        <div id="phoneNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="videos.html">YouTube</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+        </div> <!-- END PHONE NAV -->
+    </header><!-- END NAVIGATION -->
+
+
+    <div class="proj_disc">
+        <div class="proj_div">
+                <h1>WEBSITE PERFORMANCE OPTIMIZATION</h1>
+                <p><a href="project.html">Projects</a> \ Website Performance Optimization<p>
+        </div>
+        <div class="proj_disc_img">
+            <img src="img/proj/web_opt_review.jpg" alt="picture of website project">
+        </div>
+        <h2>Improving Performance</h2>
+        <p>The objective of this project was to test the student’s ability to improve an extremely inefficient website. Supporting courses included Website Performance Optimization and Browser Rendering Optimization.</p>
+
+        <h2>Requirements</h2>
+        <p>Achieving a Google PageSpeed of 90 or above and a FPS of 60 for pizza-min.html
+        </p>
+
+        <h2>How optimizations were made</h2>
+        <h3>Index.html Page Display:</h3>
+
+        <ul>
+            <li>CSS was inlined to remove render blocking.</li>
+            <li>All css was minifyied to reduce bytes for faster parsing.</li>
+            <li>JS files for index.html were given the async attribute to remove render blocking.</li>
+            <li>images were reduced to thumbmail size and compressed to reduce file size.</li>
+            <li>Google fonts was removed to remove render blocking and downloading. Affect on text was marginal</li>
+            <li>CSS element tags were replaced with faster element or class tags.</li>
+            <li>css/style-print.css was given the media tag print to remove render blocking.</li>
+            <li>Comments removed.</li>
+        </ul>
+
+        <h3>pizza.html Page Display (browser runs pizza-min.html)</h3>
+        <ul>
+            <li>CSS was inlined to remove render blocking.</li>
+            <li>All css was minifyied to reduce bytes for faster parsing.</li>
+            <li>JS files for index.html were given the async attribute to remove render blocking.</li>
+            <li>images were reduced to thumbmail size and compressed to reduce file size.</li>
+            <li>Google fonts was removed to remove render blocking and downloading. Affect on text was marginal</li>
+            <li>CSS element tags were replaced with faster element or class tags.</li>
+            <li>css/style-print.css was given the media tag print to remove render blocking.</li>
+            <li>Comments removed.</li>
+        </ul>
+
+        <h2>How to test requirements</h2>
+        <h3>PageSpeed Insights</h3>
+        <p>Visit:</p>
+        <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">https://developers.google.com/speed/pagespeed/insights/</a>
+
+        <p>Copy and paste:</p>
+        <a href="http://garcrich.github.io/web-optimization" target="_blank">http://garcrich.github.io/web-optimization</a>
+
+        <p>into analyze field.</p>
+
+        <h3>FPS for pizza-min.html</h3>
+        <ol>
+            <li>From the homepage select Cam's Pizzeria within the Chrome web browser.</li>
+            <li>Open Google developer tools.</li>
+            <li>Under enable Rendering tab (press Esc if not shown) check the option "Show FPS meter"</li>
+            <li>In the top right corner FPS stats will be shown.</li>
+            <li>Scroll on the page to see if FPS 60 can be obtained.</li>
+        </ol>
+
+        <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" class="proj_link">Google Page Speed Insights</a>
+
+        <a href="http://garcrich.github.io/web-optimization" target="_blank" class="proj_link">Access Site</a>
+    </div>
+
+
+    <footer class="clearfix">
+        <ul>
+            <li>
+                <a href="https://github.com/garcrich" target="_blank"><img src="img/head_foot/git_hub.png" alt="Git Hub Logo">
+                </a>
+            </li>
+            <li class="linked_in">
+                <a href="https://www.linkedin.com/in/richardgarcia2" target="_blank"><img src="img/head_foot/linked_in.png" alt="LinkedIn Logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/garcrich" target="_blank"><img src="img/head_foot/twitter.png" alt="twitter logo">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:garcrich@outlook.com"><img src="img/head_foot/email.png" alt="square mail letter icon">
+                </a>
+            </li>
+        </ul>
+    </footer> <!-- END CONTENT FOOTER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
